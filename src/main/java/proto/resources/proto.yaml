@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: proto-definitions
+  description: Shared gRPC proto definitions for Greeter service
+  tags:
+    - grpc
+    - proto
+spec:
+  type: library
+  owner: your-team-name
+  lifecycle: experimental
+  system: greeting-system
+  providesApis:
+    - greeting-grpc-api
